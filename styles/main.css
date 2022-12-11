@@ -1,0 +1,225 @@
+
+/*
+Name:  Luke Lynn
+
+University Name:  Southern Illinois University
+
+Date Developed:  12-11-2022
+
+Date Tested:  12-11-2022
+*/
+
+
+body {
+  font-family: Molengo;
+} 
+
+img:first-child {
+        border: 5px solid blue;
+    border-radius: 50px 50px 50px 50px;
+     width: 100%;
+    max-width: 600px;
+    position: static;
+}
+
+
+@media only screen and (max-width: 2024px) { 
+    #mobile_menu { display: none; }    
+}
+/* tablet portrait layout  */
+@media only screen and (max-width: 959px) { 
+    #mobile_menu { display: none; } 
+}
+/* mobile landscape layout */ 
+
+@media only screen and (max-width: 767px) { 
+    #mobile_menu { display: block; }
+    #nav_menu { display: none; }
+    header h2 { font-size: 1.375em; }        
+    header h3 { font-size: .8125em; }   
+    p { font-size: .875em; }            
+    article h1, main h2, aside h2
+        { font-size: 1em; }             
+    aside li { font-size: .875em; }     
+    
+}
+/* mobile portrait layout */ 
+
+@media only screen and (max-width: 479px) { 
+    #mobile_menu { display: block; }
+    #nav_menu { display: none; }
+    header h2 { font-size: 1.375em; }   
+    header h3 { font-size: .8125em; }    
+    p { font-size: .875em; }             
+    article h1, main h2, aside h2 
+        { font-size: 1em; }              
+    aside li { font-size: .875em; }     
+  
+}
+
+/* styles for elements */ 
+body {
+    
+    font-size: 1em;     
+    width: 90%;          
+    max-width 1024px;
+    background-color: gray; /* gray */
+    margin: 10px auto;
+    } 
+header { 
+    width: 97.917%;          
+    padding: 10px 1.0417%;
+    clear: both; 
+    font-size: 2em;
+
+
+     }
+
+main {
+    width: 47.917%;          
+    padding: 10px 1.0417%;
+    background-color: #ffffff; /* this color is white for column panel */
+    float: left; }
+
+aside {
+    width: 47.917%;          
+    padding: 10px 1.0417%;
+    background-color: #ffffff; /* this color is white for column panel */
+    float: right; }
+h1 {
+    font-size: 1.75em;  
+    padding: 10px;
+}
+
+h2 {
+    font-size: 1.5em;  
+    padding: 10px;
+} 
+
+h3 {
+    font-size: 1.125em;  
+    padding: 10px;
+} 
+p { 
+    font-size: 1.125em;  
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+blockquote {
+    width: 47.917%;          
+    padding: 10px 1.0417%;
+    float: center; 
+}
+footer { 
+    font-size: .75em; 
+    width: 97.917%;            
+    padding: 10px 1.0417%;
+    clear: both; 
+     }
+    
+ul { 
+    
+    padding-left: 10px; } 
+
+li {
+    padding-left: 10px; /* space between bullet and text */ 
+   
+} 
+
+
+/* Navigation aligned left */ 
+#nav_menu ul {
+     list-style-type: none; padding: 1em 0;
+     font-size: 1.5em;
+     text-align: left;
+     } 
+#nav_menu ul li { 
+    display: inline; 
+    padding: 0 1em; } 
+#nav_menu ul li a { 
+    font-weight: bold; 
+    color: #ffffff; }
+#nav_menu ul li a.current { text-decoration: none; }
+
+div img {
+      width: 100%;
+    max-width: 200px;
+    height: 100%;
+    max-height: 200px;
+    position: static;
+}
+
+table, th, td {
+  border: 1px solid black;
+max-width: 470px;
+    border-collapse: collapse;
+}
+
+
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+input[type=tel], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=date], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=reset] {
+  background-color: red;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+    
